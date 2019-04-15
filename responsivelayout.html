@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		h1{
+			height: 30%;
+			background-color: lightgray;
+			padding: 25px;
+			text-align: center;
+		}
+		section{
+			display: block;
+			background-color: lightgray;
+		}
+		nav{
+			display: inline-block;
+			width: 15%;
+			margin-top: 10px;
+		}
+		nav a{
+			display: block;
+			padding: 5px;
+			text-decoration: none;
+			color: black;
+		}
+		article{
+			display: inline-block;
+			width: 70%;
+		}
+		article h1{
+			margin: 0;
+		}
+		footer{
+			height: 20%;
+			padding: 15px;
+			background-color: lightgrey;
+			margin-top: 10px;
+		}
+		footer p{
+			text-align: center;
+		}
+		@media screen and (max-width: 620px){
+			h1,nav,article,footer{
+				width: 100%;
+			}
+			nav{
+				text-align: center;
+			}
+		}
+
+	</style>
+</head>
+<body>
+		<h1>My Website</h1>
+		<section>
+			<nav>
+				<a href="">Link1</a>
+				<a href="">Link2</a>
+				<a href="">Link3</a>
+				<a href="">Link4</a>
+			</nav>
+			<article>
+				<h1>Article1</h1>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			</article>
+		</section>
+		<footer>
+			<p><b>@copyright 2019-2021 fullstackdevelopment.com</b></p>
+		</footer>
+</body>
+</html>
